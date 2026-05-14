@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cap Talent Lab — Salon de l'Emploi du Cap-Haïtien</title>
+<meta name="description" content="Cap Talent Lab est la première plateforme de connexion entre talents et entreprises dans le Grand Nord d'Haïti. Une initiative de Zero Loss Consulting.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://captalentlab.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://captalentlab.com/">
+<meta property="og:title" content="Cap Talent Lab — Salon de l'Emploi du Cap-Haïtien">
+<meta property="og:description" content="La première plateforme de connexion entre talents et entreprises dans le Grand Nord d'Haïti. 23–24 janvier 2026 · Hôtel Roi Christophe · Une initiative de Zero Loss Consulting.">
+<meta property="og:image" content="https://captalentlab.com/og-image.jpg">
+<meta property="og:locale" content="fr_HT">
+<meta property="og:site_name" content="Cap Talent Lab">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@captalentlab">
+<meta name="twitter:title" content="Cap Talent Lab — Salon de l'Emploi du Cap-Haïtien">
+<meta name="twitter:description" content="La première plateforme de connexion entre talents et entreprises dans le Grand Nord d'Haïti.">
+<meta name="twitter:image" content="https://captalentlab.com/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://captalentlab.com/">
+<meta property="og:title" content="Cap Talent Lab — Salon de l'Emploi du Cap-Haïtien">
+<meta property="og:description" content="La première plateforme de connexion entre talents et entreprises dans le Grand Nord d'Haïti. Une initiative de Zero Loss Consulting.">
+<meta property="og:image" content="https://captalentlab.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@captalentlab">
+<meta name="twitter:title" content="Cap Talent Lab — Salon de l'Emploi du Cap-Haïtien">
+<meta name="twitter:description" content="La première plateforme de connexion entre talents et entreprises dans le Grand Nord d'Haïti.">
+<meta name="theme-color" content="#002548">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23002548'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='bold' fill='%23FF5D21' font-family='sans-serif'>C</text></svg>">
+<link rel="canonical" href="https://captalentlab.com/">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+  :root {
+    --navy:       #002548;
+    --navy-mid:   #0D3460;
+    --sky:        #30A1FC;
+    --sky-light:  #A2C4DF;
+    --orange:     #FF5D21;
+    --orange-dk:  #E04A10;
+    --sand:       #F4EFE6;
+    --white:      #FFFFFF;
+    --gray:       #7A8FA8;
+    --gray-light: #F0F4FA;
+    --text:       #002548;
+    --font-d:     'Syne', sans-serif;
+    --font-b:     'DM Sans', sans-serif;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; min-width: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+  body { font-family: var(--font-b); color: var(--text); background: var(--white); overflow-x: hidden; }
+  .skip-link {
+    position: absolute; top: -40px; left: 16px; padding: 8px 16px;
+    background: var(--orange); color: var(--white); border-radius: 0 0 6px 6px;
+    font-size: 13px; font-weight: 600; text-decoration: none; z-index: 9999;
+    transition: top 0.2s;
+  }
+  .skip-link:focus { top: 0; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 0 5vw; height: 70px;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: background 0.3s, backdrop-filter 0.3s;
+  }
+  nav.scrolled { background: var(--navy); }
+  .nav-logo .nav-svg-logo { height: 36px; width: auto; display: block; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    font-size: 12px; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: rgba(255,255,255,0.65);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta {
+    background: var(--orange) !important; color: var(--white) !important;
+    padding: 9px 20px; border-radius: 4px; opacity: 1 !important;
+    font-size: 11px !important; font-weight: 600 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--orange-dk) !important; }
+
+  /* ─── HERO ─── */
+  #hero {
+    min-height: 100vh;
+    background: var(--navy) url("images/hero-bg.jpg") center center / cover no-repeat;
+    position: relative; display: flex; flex-direction: column;
+    justify-content: flex-end; padding: 0 6vw 9vh; overflow: hidden;
+  }
+  /* Dark gradient overlay for readability */
+  #hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,20,60,0.78) 0%,
+      rgba(0,30,70,0.72) 40%,
+      rgba(0,15,45,0.96) 100%
+    );
+    z-index: 0;
+  }
+  /* Orange accent line at bottom */
+  #hero::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--orange) 0%, var(--sky) 100%);
+    z-index: 2;
+  }
+  /* All hero children above overlay */
+  #hero > * { position: relative; z-index: 1; }
+  .hero-bg-text {
+    position: absolute; top: 50%; left: -1vw; transform: translateY(-52%);
+    font-family: var(--font-d); font-size: clamp(110px, 20vw, 280px);
+    font-weight: 800; color: rgba(255,255,255,0.025); white-space: nowrap;
+    pointer-events: none; user-select: none; line-height: 1; letter-spacing: -0.02em;
+  }
+  .hero-eyebrow {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--orange); margin-bottom: 28px;
+  }
+  .hero-eyebrow .dots { display: flex; gap: 5px; }
+  .hero-eyebrow .dot {
+    width: 7px; height: 7px; border-radius: 1px;
+    background: var(--orange);
+  }
+  .hero-title {
+    font-family: var(--font-d); font-size: clamp(44px, 8.5vw, 106px);
+    font-weight: 800; color: var(--white); line-height: 0.94;
+    letter-spacing: -0.015em; max-width: 960px; margin-bottom: 40px;
+  }
+  .hero-title em { font-style: normal; color: var(--sky); }
+  .hero-title .accent { color: var(--orange); }
+  .hero-bottom {
+    display: flex; justify-content: space-between;
+    align-items: flex-end; gap: 40px; flex-wrap: wrap;
+  }
+  .hero-meta { display: flex; flex-direction: column; gap: 7px; }
+  .hero-meta .date {
+    font-family: var(--font-d); font-size: 16px; font-weight: 700;
+    color: var(--white); letter-spacing: 0.04em;
+  }
+  .hero-meta .place { font-size: 13px; color: var(--sky-light); letter-spacing: 0.04em; }
+  .hero-desc {
+    max-width: 400px; font-size: 15px; line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+  }
+  .hero-scroll {
+    position: absolute; bottom: 28px; right: 6vw;
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+  }
+  .hero-scroll::after {
+    content: ''; display: block; width: 1px; height: 44px;
+    background: rgba(255,255,255,0.2);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  @media (prefers-reduced-motion: reduce) {
+    .fu { opacity: 1; transform: none; transition: none; }
+    .hero-scroll::after, .video-label::before { animation: none; }
+  }
+
+  /* ─── STATS ─── */
+  #stats { background: var(--orange); }
+  .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+  .stat-item {
+    padding: 44px 40px;
+    border-right: 1px solid rgba(255,255,255,0.18);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-number {
+    font-family: var(--font-d); font-size: clamp(42px, 5vw, 68px);
+    font-weight: 800; color: var(--white); line-height: 1; margin-bottom: 8px;
+  }
+  .stat-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: rgba(255,255,255,0.72); line-height: 1.4;
+  }
+
+  /* ─── SHARED ─── */
+  section { padding: 96px 6vw; }
+  .eyebrow {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--orange); margin-bottom: 18px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .eyebrow::before {
+    content: ''; display: block; width: 22px; height: 1.5px; background: var(--orange);
+  }
+  h2 {
+    font-family: var(--font-d); font-size: clamp(30px, 4vw, 50px);
+    font-weight: 700; color: #002548; line-height: 1.08;
+    letter-spacing: -0.015em; margin-bottom: 24px;
+  }
+  .on-dark h2 { color: #ffffff; }
+  #apropos h2, #impact h2, #partenaires h2, #rejoindre h2 { color: #002548; }
+
+  /* ─── À PROPOS ─── */
+  #apropos { background: #F0F5FC; }
+  .apropos-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+  }
+  .apropos-text p {
+    font-size: 16px; line-height: 1.78; color: #3A4D66; margin-bottom: 18px;
+  }
+  .apropos-text p strong { color: var(--navy); font-weight: 600; }
+  .apropos-visual { display: flex; flex-direction: column; gap: 14px; }
+  .apropos-card {
+    background: var(--white); border-radius: 10px; padding: 24px 28px;
+    display: flex; gap: 20px; align-items: flex-start;
+    border-left: 3px solid var(--sky);
+  }
+  .apropos-card .num {
+    font-family: var(--font-d); font-size: 32px; font-weight: 800;
+    color: var(--orange); line-height: 1; min-width: 44px;
+  }
+  .apropos-card .text strong {
+    display: block; font-size: 14px; font-weight: 600;
+    color: var(--navy); margin-bottom: 4px;
+  }
+  .apropos-card .text span { font-size: 13px; color: var(--gray); line-height: 1.5; }
+
+  /* ─── DÉROULÉ ─── */
+  #deroule { background: var(--navy); padding: 96px 0 0; overflow: hidden; }
+  #deroule .deroule-header { padding: 0 6vw 56px; }
+
+  .jour-block { position: relative; }
+  .jour-block + .jour-block { border-top: 1px solid rgba(255,255,255,0.06); margin-top: 0; }
+
+  /* Day header strip */
+  .jour-header {
+    display: flex; align-items: stretch; border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .jour-num-box {
+    background: var(--orange); padding: 28px 44px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-width: 130px; flex-shrink: 0;
+  }
+  .jour-num-box .big-n {
+    font-family: var(--font-d); font-size: 56px; font-weight: 800;
+    color: var(--white); line-height: 1;
+  }
+  .jour-num-box .jour-word {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.18em;
+    text-transform: uppercase; color: rgba(255,255,255,0.65);
+  }
+  .jour-meta {
+    flex: 1; padding: 28px 48px;
+    background: rgba(255,255,255,0.025);
+    display: flex; flex-direction: column; justify-content: center; gap: 6px;
+  }
+  .jour-date-pill {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--sky);
+  }
+  .jour-meta h3 {
+    font-family: var(--font-d); font-size: clamp(20px, 2.5vw, 30px);
+    font-weight: 700; color: var(--white); line-height: 1.1;
+  }
+
+  /* Day content: 3-column */
+  .jour-content {
+    display: grid; grid-template-columns: 38% 1fr; gap: 0;
+  }
+  .jour-prog {
+    padding: 44px 44px 44px 6vw;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+  .jour-media { padding: 44px 6vw 44px 44px; display: flex; flex-direction: column; gap: 20px; overflow: hidden; }
+
+  /* Program */
+  .prog-list { list-style: none; }
+  .prog-item {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.045);
+  }
+  .prog-item:last-child { border-bottom: none; }
+  .prog-dot {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--sky);
+    flex-shrink: 0; margin-top: 8px;
+  }
+  .prog-item.hl .prog-dot { background: var(--orange); box-shadow: 0 0 0 3px rgba(255,93,33,0.18); }
+  .prog-text { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+  .prog-text strong { color: rgba(255,255,255,0.88); font-weight: 500; }
+  .prog-tag {
+    display: inline-block; font-size: 8.5px; font-weight: 700;
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--orange);
+    background: rgba(255,93,33,0.14); padding: 2px 7px; border-radius: 3px;
+    margin-bottom: 4px;
+  }
+
+
+  /* ─── PHOTO CAROUSEL (dual auto-scroll rows) ─── */
+  .gallery-rows {
+    display: flex; flex-direction: column; gap: 8px;
+    overflow: hidden; border-radius: 8px;
+  }
+  .scroll-row {
+    overflow: hidden; position: relative;
+  }
+  .scroll-row-track {
+    display: flex; gap: 8px; width: max-content;
+  }
+  .scroll-row.left .scroll-row-track {
+    animation: scrollLeft var(--scroll-duration, 80s) linear infinite;
+  }
+  .scroll-row.right .scroll-row-track {
+    animation: scrollRight var(--scroll-duration, 80s) linear infinite;
+  }
+  .gallery-rows:hover .scroll-row-track { animation-play-state: paused; }
+  .scroll-row-track .slide {
+    flex-shrink: 0; width: 240px; height: 155px;
+    border-radius: 6px; overflow: hidden;
+    background: rgba(255,255,255,0.035);
+  }
+  .scroll-row-track .slide img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .scroll-row-track .slide.empty {
+    border: 1.5px dashed rgba(255,255,255,0.08);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .scroll-row-track .slide.empty .pslot-lbl {
+    font-size: 9px; font-weight: 600; letter-spacing: 0.13em;
+    text-transform: uppercase; color: rgba(255,255,255,0.12);
+  }
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  @media(max-width:900px) {
+    .scroll-row-track .slide { width: 200px; height: 130px; }
+  }
+  @media(max-width:600px) {
+    .scroll-row-track .slide { width: 160px; height: 110px; }
+  }
+
+  /* Video recap */
+  .video-section { padding: 0 6vw 56px; }
+  .video-block {
+    background: rgba(0,0,0,0.25); border-radius: 12px; overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.07);
+    max-width: 70%; margin: 0 auto;
+  }
+  .video-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 28px; border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .video-label {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--sky);
+  }
+  .video-label::before {
+    content: ''; display: block; width: 8px; height: 8px;
+    border-radius: 50%; background: var(--orange);
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .video-stage {
+    position: relative; aspect-ratio: 16/9; background: #000;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .video-stage video {
+    width: 100%; height: 100%; object-fit: contain; display: block;
+  }
+  .video-stage::before {
+    content: ''; position: absolute; z-index: 2;
+    width: 72px; height: 72px; border-radius: 50%;
+    background: rgba(0,0,0,0.55);
+    border: 3px solid rgba(255,255,255,0.9);
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    pointer-events: none; transition: opacity 0.3s, transform 0.3s;
+  }
+  .video-stage::after {
+    content: ''; position: absolute; z-index: 3;
+    top: 50%; left: 50%;
+    transform: translate(-40%, -50%);
+    border-style: solid;
+    border-width: 12px 0 12px 22px;
+    border-color: transparent transparent transparent #fff;
+    pointer-events: none; transition: opacity 0.3s;
+  }
+  .video-stage:hover::before {
+    background: rgba(0,0,0,0.7); transform: translate(-50%, -50%) scale(1.08);
+  }
+  .video-stage.playing::before,
+  .video-stage.playing::after { opacity: 0; pointer-events: none; }
+  .jour-block + .jour-block .video-section { padding-top: 0; }
+
+  /* ─── IMPACT ─── */
+  #impact { background: var(--white); }
+  .impact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+  .impact-lead { font-size: 17px; line-height: 1.75; color: #3A4D66; margin-bottom: 32px; }
+  .impact-pts { display: flex; flex-direction: column; gap: 14px; }
+  .impact-pt {
+    display: flex; gap: 0; align-items: stretch;
+    background: #F0F5FC; border-radius: 6px; overflow: hidden;
+  }
+  .impact-pt .stripe { width: 4px; background: var(--sky); flex-shrink: 0; }
+  .impact-pt p { font-size: 14px; font-weight: 500; color: var(--navy); padding: 14px 18px; line-height: 1.4; }
+  .impact-nums { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .impact-nc {
+    padding: 28px 24px; border: 1.5px solid #E8EFF8;
+    border-radius: 10px; position: relative; overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .impact-nc:hover { border-color: var(--sky); transform: translateY(-2px); }
+  .impact-nc .big {
+    font-family: var(--font-d); font-size: 46px; font-weight: 800;
+    color: var(--navy); line-height: 1; margin-bottom: 6px;
+  }
+  .impact-nc .big em { font-style: normal; color: var(--orange); }
+  .impact-nc .lbl {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--gray); line-height: 1.45;
+  }
+  .impact-nc .ghost {
+    position: absolute; bottom: -10px; right: -4px;
+    font-family: var(--font-d); font-size: 72px; font-weight: 800;
+    color: rgba(48,161,252,0.06); line-height: 1; pointer-events: none;
+  }
+
+  /* ─── PARTENAIRES ─── */
+  #partenaires { background: #F0F5FC; }
+  .partenaires-intro {
+    font-size: 15px; color: #3A4D66; line-height: 1.7;
+    max-width: 600px; margin-bottom: 48px;
+  }
+  .partenaires-grid {
+    display: grid; grid-template-columns: repeat(4,1fr); gap: 14px;
+  }
+  .partenaire-item {
+    background: var(--white); border-radius: 8px;
+    height: 80px; display: flex; align-items: center; justify-content: center;
+    padding: 14px 20px; border: 1px solid rgba(0,37,72,0.08);
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  .partenaire-item img {
+    max-width: 100%; max-height: 100%; object-fit: contain;
+  }
+  .partenaire-item:hover {
+    box-shadow: 0 4px 18px rgba(48,161,252,0.15); border-color: var(--sky);
+  }
+  .partenaire-item.highlight {
+    border-color: var(--orange); color: var(--orange);
+  }
+
+  /* ─── PERSPECTIVES ─── */
+  #perspectives { background: var(--navy); }
+  .persp-sub {
+    font-size: 16px; color: rgba(255,255,255,0.5); line-height: 1.7;
+    max-width: 580px; margin-bottom: 56px;
+  }
+  .persp-grid {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 18px;
+  }
+  .persp-card {
+    border: 1px solid rgba(255,255,255,0.09); border-radius: 10px;
+    padding: 30px 26px; transition: border-color 0.3s, background 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .persp-card:hover { border-color: rgba(48,161,252,0.4); background: rgba(48,161,252,0.05); }
+  .persp-card.done { border-color: var(--orange); background: rgba(255,93,33,0.06); }
+  .persp-card.next { border-color: var(--sky); background: rgba(48,161,252,0.08); }
+  .done-badge, .next-badge {
+    position: absolute; top: 14px; right: 14px;
+    font-size: 9px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; padding: 3px 8px; border-radius: 3px;
+  }
+  .done-badge { color: var(--orange); background: rgba(255,93,33,0.12); }
+  .next-badge { color: var(--sky); background: rgba(48,161,252,0.15); }
+  .persp-city {
+    font-family: var(--font-d); font-size: 21px; font-weight: 700;
+    color: var(--white); margin-bottom: 4px;
+  }
+  .persp-region {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 18px;
+  }
+  .persp-status { font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.5; }
+  .persp-status strong { color: var(--orange); font-weight: 600; }
+
+  /* ─── REJOINDRE ─── */
+  #rejoindre { background: var(--white); }
+  .rejoindre-hd { max-width: 600px; margin-bottom: 56px; }
+  .rejoindre-hd p { font-size: 16px; color: #3A4D66; line-height: 1.7; margin-top: 14px; }
+  .rejoindre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+  .rcard {
+    border: 1.5px solid #E8EFF8; border-radius: 12px; padding: 40px;
+    transition: border-color 0.2s;
+  }
+  .rcard:hover { border-color: var(--sky); }
+  .rcard-icon {
+    width: 46px; height: 46px; background: var(--navy); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; margin-bottom: 18px;
+  }
+  .rcard h3 {
+    font-family: var(--font-d); font-size: 20px; font-weight: 700;
+    color: var(--navy); margin-bottom: 8px;
+  }
+  .rcard p { font-size: 13px; color: var(--gray); line-height: 1.65; margin-bottom: 24px; }
+  .fg { margin-bottom: 12px; }
+  .fg input, .fg select {
+    width: 100%; padding: 11px 15px;
+    border: 1.5px solid #DDE7F2; border-radius: 6px;
+    font-family: var(--font-b); font-size: 14px; color: var(--navy);
+    background: var(--white); outline: none; transition: border-color 0.2s; appearance: none;
+  }
+  .fg input:focus, .fg select:focus { border-color: var(--sky); }
+  .fg input::placeholder { color: #A8B8CC; }
+  .btn {
+    display: block; width: 100%; padding: 13px 24px; border-radius: 6px;
+    font-family: var(--font-b); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.07em; text-transform: uppercase; cursor: pointer;
+    transition: all 0.2s; border: none; text-align: center;
+  }
+  .btn-primary { background: var(--orange); color: var(--white); }
+  .btn-primary:hover { background: var(--orange-dk); transform: translateY(-1px); }
+  .btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+  .btn-outline:hover { background: var(--navy); color: var(--white); }
+  .ok-msg {
+    display: none; background: #E8F5E9; color: #1B5E20;
+    padding: 12px 16px; border-radius: 6px; font-size: 13px;
+    font-weight: 500; margin-top: 12px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer { background: var(--navy); padding: 64px 6vw 36px; }
+  .footer-top {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+    padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .footer-logo { height: 32px; width: auto; margin-bottom: 16px; opacity: 0.9; }
+  .footer-brand .tag {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--orange); margin-bottom: 14px; display: block;
+  }
+  .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.65; max-width: 280px; }
+  .footer-init {
+    display: flex; align-items: center; gap: 10px;
+    margin-top: 20px; padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-init span { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.25); }
+  .footer-init a { font-size: 13px; font-weight: 600; color: var(--sky); text-decoration: none; }
+  .footer-col h4 {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 16px;
+  }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col ul a {
+    font-size: 13px; color: rgba(255,255,255,0.5);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .footer-col ul a:hover { color: var(--white); }
+  .fci { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 10px; line-height: 1.45; }
+  .fci strong { display: block; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.25); margin-bottom: 2px; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 28px; flex-wrap: wrap; gap: 14px;
+  }
+  .footer-bottom p { font-size: 11px; color: rgba(255,255,255,0.22); }
+  .footer-bottom p a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  .footer-socials { display: flex; gap: 18px; }
+  .footer-socials a {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.09em;
+    text-transform: uppercase; color: rgba(255,255,255,0.3);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .footer-socials a:hover { color: var(--orange); }
+
+  /* ─── ANIMATIONS ─── */
+  .fu { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+  .fu.vis { opacity: 1; transform: none; }
+  .fu:nth-child(2) { transition-delay: 0.1s; }
+  .fu:nth-child(3) { transition-delay: 0.2s; }
+  .fu:nth-child(4) { transition-delay: 0.3s; }
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:900px) {
+    .stats-grid { grid-template-columns: repeat(2,1fr); }
+    .apropos-grid,.impact-grid,.rejoindre-grid { grid-template-columns:1fr; gap:36px; }
+    .apropos-grid > *, .impact-grid > *, .rejoindre-grid > * { min-width: 0; }
+    .jour-content { grid-template-columns:1fr; }
+    .jour-media { border-left:none; border-top: 1px solid rgba(255,255,255,0.06); padding: 0 5vw 40px; }
+    .jour-prog { padding: 40px 5vw 0; }
+    .jour-meta { padding: 20px 5vw; }
+    .jour-num-box { min-width: 90px; padding: 22px 28px; }
+    .jour-num-box .big-n { font-size: 44px; }
+    .persp-grid { grid-template-columns:repeat(2,1fr); }
+    .partenaires-grid { grid-template-columns:repeat(3,1fr); }
+    .partenaire-item { height: 72px; }
+    .video-block { max-width: 90%; }
+    .footer-top { grid-template-columns:1fr 1fr; }
+    .nav-links { display:none; }
+    .prog-text { word-break: break-word; overflow-wrap: break-word; }
+  }
+  @media(max-width:600px) {
+    .persp-grid { grid-template-columns:1fr; }
+    .partenaires-grid { grid-template-columns:repeat(2,1fr); }
+    .partenaire-item { height: 64px; padding: 12px 16px; }
+    .partenaire-item img { transform: none !important; }
+    .footer-top { grid-template-columns:1fr; }
+    .impact-nums { grid-template-columns:1fr; }
+    h2 { font-size: clamp(24px, 7vw, 36px); }
+    .apropos-card { padding: 18px 16px; gap: 14px; }
+    .apropos-card .num { font-size: 26px; min-width: 36px; }
+    .jour-meta { padding: 16px 5vw; }
+    .jour-prog { padding: 28px 5vw 0; }
+    .jour-media { padding: 0 5vw 28px; }
+    .video-header { padding: 14px 16px; }
+    .prog-item { gap: 12px; }
+    .prog-text { font-size: 12px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    .fu { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ─── MOBILE NAV ─── */
+  .nav-burger {
+    display: none; background: none; border: none; cursor: pointer;
+    padding: 6px; gap: 5px; flex-direction: column;
+  }
+  .nav-burger span {
+    display: block; width: 22px; height: 2px; background: var(--white);
+    border-radius: 2px; transition: transform 0.25s, opacity 0.25s;
+  }
+  .nav-burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-burger.open span:nth-child(2) { opacity: 0; }
+  .nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 900px) {
+    .nav-burger { display: flex; }
+    .nav-links {
+      display: flex; flex-direction: column; position: fixed;
+      top: 70px; left: 0; right: 0; background: var(--navy);
+      padding: 24px 6vw 32px; gap: 0; list-style: none;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      transform: translateY(-110%); opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: all; }
+    .nav-links li { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .nav-links a {
+      display: block; padding: 16px 0; font-size: 14px !important;
+      color: rgba(255,255,255,0.75) !important;
+    }
+    .nav-cta {
+      margin-top: 12px; text-align: center; border-radius: 6px;
+      padding: 14px 0 !important; font-size: 13px !important;
+    }
+    .jour-num-box { min-width: 80px; padding: 20px 24px; }
+    .jour-num-box .big-n { font-size: 40px; }
+    .video-stage { aspect-ratio: 16/9; }
+  }
+  @media (max-width: 600px) {
+    .jour-header { flex-direction: column; }
+    .jour-num-box { flex-direction: row; gap: 12px; align-items: center; padding: 16px 20px; }
+    .deroule-header { padding: 0 5vw 40px; }
+    section { padding: 64px 5vw; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .stat-item { padding: 32px 24px; }
+    .hero-title { font-size: clamp(36px, 12vw, 64px); }
+    .rejoindre-grid { gap: 24px; }
+    .video-block { max-width: 100%; }
+  }
+  .skip-link {
+    position: absolute; top: -100%; left: 0; background: var(--orange);
+    color: var(--white); padding: 10px 20px; font-size: 13px; font-weight: 600;
+    text-decoration: none; z-index: 9999; border-radius: 0 0 6px 0;
+    transition: top 0.2s;
+  }
+  .skip-link:focus { top: 0; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<a href="#apropos" class="skip-link">Passer au contenu principal</a>
+<nav id="navbar" role="banner" aria-label="Navigation principale">
+  <a href="#hero" class="nav-logo">
+    <svg class="nav-svg-logo" id="nav-logo-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.53 203.14">
+  <defs><style>.nav-svg-logo .cls-1,.nav-svg-logo .cls-2,.nav-svg-logo .cls-3,.nav-svg-logo .cls-4{fill:#ffffff}</style></defs>
+  <g id="nav-logo-inner">
+    <g>
+      <g>
+        <g>
+          <polygon class="cls-3" points="84.15 168.19 89.33 168.19 89.44 158.43 84.25 158.53 84.15 168.19"/>
+          <polygon class="cls-3" points="96.14 168.29 102.55 168.26 102.56 158.33 96.08 158.23 96.14 168.29"/>
+          <polygon class="cls-3" points="77.14 158.53 77.14 168.08 79.58 168.19 79.48 158.53 77.14 158.53"/>
+          <path class="cls-3" d="M14.24,161.38h0c-1.96,0-3.56,1.59-3.56,3.56v8.84h7.11v-8.84c0-1.96-1.59-3.56-3.56-3.56Z"/>
+          <polygon class="cls-3" points="110.17 168.49 116.98 168.08 117.08 158.23 110.17 158.43 110.17 168.49"/>
+          <path class="cls-4" d="M36.2,93.66c6.42-1.29,13.14-2.8,18.7-6.4,5.05-3.27,8.94-8.06,11.92-13.24,6.82-11.87,8.61-25.7,12.4-38.66,3.71-12.66,9.55-24.64,17.16-35.37H0v95.38c12.06,1.22,24.3.67,36.2-1.72Z"/>
+          <polygon class="cls-3" points="147.67 158.63 147.87 168.08 150.31 167.98 150.21 158.84 147.67 158.63"/>
+          <path class="cls-3" d="M216.46,159.2h0c-2.05,0-3.7,1.66-3.7,3.7v9.21h7.41v-9.21c0-2.05-1.66-3.7-3.7-3.7Z"/>
+          <path class="cls-1" d="M209.92,0c-9.67,4.58-16.59,14.08-21.12,23.23-3.3,6.66-5.85,13.63-8.82,20.43-2.96,6.78-6.5,13.14-10.91,19.14-4.31,5.86-9.04,11.49-12.29,17.99-3.65,7.3-5.19,15.36-7.43,23.12-1.45,5.01-2.94,9.64-4.41,13.86,7.86,10.78,8.37,21.99,8.4,25.44l1.63-.2.07,1.36-1.29.34v2.03l-1.15.68-.34,21.41,1.29.14.27,5.42,1.76.07.14,1.22,32.59-.34,12.19,11.38v-5.49l-1.22-.68,1.35-1.35c.09-7.68.18-15.36.27-23.03-.08-2.08-.02-7.44,3.46-12.74,2.15-3.28,4.76-5.24,6.44-6.3l.14-1.35-1.15-.2.14-1.83,2.17-2.71-.15-9.74-1.74-1.98,1.19-.28c-.16-2.56,1.72-4.71,3.96-4.93,2.49-.25,4.94,1.94,4.88,4.8l1.27.25-1.93,2.13-.05,9.81,2.24,2.08v2.29l-1.02-.1c-.03.61-.07,1.22-.1,1.83,1.74.94,5.23,3.15,7.93,7.38,1.34,2.11,2.15,4.2,2.64,6.06V0h-21.27Z"/>
+          <polygon class="cls-3" points="125.21 168.29 131.3 168.19 131.71 158.33 125 158.23 125.21 168.29"/>
+          <path class="cls-3" d="M140.59,112.68c2.9-7.33,4.59-14.99,6.82-22.53,2.11-7.16,5.08-13.77,9.39-19.93,4.37-6.25,9.4-12.06,13.18-18.68,7.4-12.96,10.73-27.9,19.42-40.2,2.98-4.22,6.52-8.14,10.61-11.34h-97.58c-2.69,3.56-5.19,7.28-7.45,11.15-6.79,11.59-10.82,23.98-14.01,36.96-3.15,12.83-6.62,25.96-15.41,36.21-8.91,10.39-22.29,13.48-35.3,15.31-10.05,1.42-20.19,1.63-30.25.66v48.68c.49-1.49,1.2-3.08,2.24-4.66,2.47-3.73,5.61-5.69,7.27-6.55l.05-1.17-1.02-.15.05-2.34,1.73-2.18-.05-9.2-2.03-2.59c.46-.07.91-.14,1.37-.2-.17-2.83,2.09-5.13,4.57-5.13,2.6,0,4.92,2.53,4.52,5.49l1.52.3-1.73,1.83.05,9.4,1.98,2.18v2.49l-.91-.03c-.05.45-.09.9-.14,1.35,1.43.64,6.32,3.04,9.08,8.74,2.07,4.29,1.87,8.24,1.68,9.96l-.25,1.02v21.44l3.56,2.44,5.49-6.2h32.52l2.24-1.42,1.02-5.08-.2-7.93-.05-10.77-.76-4.83-2.13-.2-.05-1.58h2.13c.21-4,1.4-16.93,11.53-28.29,7.86-8.81,17.06-12.15,21.19-13.38l-.1-3.25.86-.25.51-12.75-1.04-.13-.33-2.03.56-.13c.1-.37.2-.74.3-1.12.26-.7.85-2.01,2.13-3.2,1.14-1.05,3.19-1.54,3.3-2.26.15-.99.15-4.78.15-4.78l-2.98.02v-2.46l2.83-.05-.05-2.56h1.98l-.03,2.67c.88.03,2.72.05,2.72.05l.06,2.38-2.7.03c-.03,1.24-.05,2.54-.08,5.13.48.34,2.62,1.6,3.12,2.17,1.06,1.19,1.55,2.41,1.78,3.12l.05.97.91.2-.05,2.34-1.17-.1.3,12.65h1.22c-.07.95-.14,1.9-.2,2.85,3.29.85,12.15,3.56,20.06,11.47Z"/>
+          <polygon class="cls-3" points="138.21 167.98 142.28 167.98 142.58 158.63 138.11 158.63 138.21 167.98"/>
+        </g>
+        <rect class="cls-3" y="191.17" width="231.41" height="11.98"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M263.68,44.66c0-13.07,10.04-22.43,23.54-22.43,7.5,0,13.75,2.73,17.84,7.68l-6.44,5.95c-2.91-3.35-6.57-5.08-10.9-5.08-8.12,0-13.88,5.7-13.88,13.88s5.76,13.88,13.88,13.88c4.34,0,7.99-1.73,10.9-5.14l6.44,5.95c-4.09,5.02-10.35,7.74-17.9,7.74-13.44,0-23.48-9.35-23.48-22.43Z"/>
+        <path class="cls-3" d="M339.51,57.05h-20.13l-3.84,9.29h-10.28l19.33-43.36h9.91l19.39,43.36h-10.53l-3.84-9.29ZM336.35,49.43l-6.88-16.6-6.88,16.6h13.75Z"/>
+        <path class="cls-3" d="M396,38.71c0,9.66-7.25,15.67-18.83,15.67h-8.74v11.96h-10.04V22.98h18.77c11.58,0,18.83,6.01,18.83,15.74ZM385.85,38.71c0-4.77-3.1-7.56-9.23-7.56h-8.18v15.05h8.18c6.13,0,9.23-2.79,9.23-7.5Z"/>
+        <path class="cls-2" d="M276.38,87.23h-14.87v-5.39h35.87v5.39h-14.87v37.98h-6.13v-37.98Z"/>
+        <path class="cls-2" d="M329.6,114.36h-23.05l-4.77,10.84h-6.38l19.64-43.36h6.13l19.7,43.36h-6.5l-4.77-10.84ZM327.43,109.4l-9.35-21.25-9.35,21.25h18.71Z"/>
+        <path class="cls-2" d="M347.31,81.84h6.19v37.98h23.48v5.39h-29.67v-43.36Z"/>
+        <path class="cls-2" d="M415.58,119.81v5.39h-31.47v-43.36h30.6v5.39h-24.41v13.32h21.74v5.27h-21.74v14h25.28Z"/>
+        <path class="cls-2" d="M462.91,81.84v43.36h-5.08l-26.02-32.34v32.34h-6.19v-43.36h5.08l26.02,32.34v-32.34h6.2Z"/>
+        <path class="cls-2" d="M484.53,87.23h-14.87v-5.39h35.87v5.39h-14.87v37.98h-6.13v-37.98Z"/>
+        <path class="cls-2" d="M268.33,140.69h4.58v39.4h24.28v3.96h-28.87v-43.36Z"/>
+        <path class="cls-2" d="M332.14,172.47h-24.16l-5.2,11.58h-4.77l19.82-43.36h4.52l19.82,43.36h-4.83l-5.2-11.58ZM330.46,168.76l-10.41-23.29-10.41,23.29h20.82Z"/>
+        <path class="cls-2" d="M385.6,172.47c0,7.37-5.45,11.58-16.29,11.58h-19.95v-43.36h18.71c9.66,0,15.24,4.09,15.24,11.15,0,4.96-2.66,8.24-6.63,9.85,5.58,1.24,8.92,4.89,8.92,10.78ZM353.94,144.47v15.74h13.81c6.94,0,10.97-2.66,10.97-7.87s-4.03-7.87-10.97-7.87h-13.81ZM381.01,172.1c0-5.64-4.15-8.12-11.77-8.12h-15.3v16.29h15.3c7.62,0,11.77-2.48,11.77-8.18Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+  </a>
+  <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks" role="navigation" aria-label="Navigation principale">
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#deroule">Édition 2026</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#partenaires">Partenaires</a></li>
+    <li><a href="#perspectives">Perspectives</a></li>
+    <li><a href="#rejoindre" class="nav-cta">Rejoindre</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" aria-label="Présentation Cap Talent Lab">
+  <div class="hero-eyebrow">
+    <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    Première édition · 23–24 janvier 2026
+    <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+  </div>
+  <h1 class="hero-title">
+    Là où les <em>talents</em><br>rencontrent les<br><span class="accent">opportunités.</span>
+  </h1>
+  <div class="hero-bottom">
+    <div class="hero-meta">
+      <span class="date">Cap-Haïtien · Hôtel Roi Christophe</span>
+      <span class="place">Grand Nord d'Haïti · Une initiative de Zero Loss Consulting</span>
+    </div>
+    <p class="hero-desc">Le premier salon de l'emploi structuré du Grand Nord. Une plateforme concrète pour connecter les jeunes professionnels aux entreprises qui recrutent.</p>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- STATS -->
+<div id="stats" role="region" aria-label="Chiffres clés">
+  <div class="stats-grid">
+    <div class="stat-item fu">
+      <div class="stat-number">+200</div>
+      <div class="stat-label">Candidatures<br>recueillies</div>
+    </div>
+    <div class="stat-item fu">
+      <div class="stat-number">+100</div>
+      <div class="stat-label">Candidats<br>présélectionnés</div>
+    </div>
+    <div class="stat-item fu">
+      <div class="stat-number">+20</div>
+      <div class="stat-label">Entreprises<br>partenaires</div>
+    </div>
+    <div class="stat-item fu">
+      <div class="stat-number">2</div>
+      <div class="stat-label">Jours d'entretiens<br>& d'ateliers</div>
+    </div>
+  </div>
+</div>
+
+<!-- À PROPOS -->
+<section id="apropos" aria-labelledby="apropos-h2">
+  <div class="apropos-grid">
+    <div class="fu">
+      <div class="eyebrow">À propos</div>
+      <h2 id="apropos-h2">Un dispositif structuré, pas juste un événement.</h2>
+      <p>Le <strong>Cap Talent Lab</strong> est la première plateforme dédiée à la connexion entre talents, entreprises et opportunités économiques dans le Grand Nord d'Haïti.</p>
+      <p>Face à l'instabilité qui affecte plusieurs régions du pays, le Grand Nord est devenu un point de convergence pour une jeunesse qualifiée et ambitieuse — un réservoir de compétences trop souvent invisible dans les dynamiques nationales.</p>
+      <p>Conçu et porté par <strong>Zero Loss Consulting</strong>, le Cap Talent Lab répond à une double réalité : des diplômés qui peinent à accéder aux entretiens, et des entreprises qui peinent à recruter les bons profils.</p>
+    </div>
+    <div class="apropos-visual fu">
+      <div class="apropos-card">
+        <div class="num">01</div>
+        <div class="text">
+          <strong>Présélection rigoureuse</strong>
+          <span>Appel à candidatures, analyse de CV, entretiens et évaluation des compétences techniques et comportementales.</span>
+        </div>
+      </div>
+      <div class="apropos-card">
+        <div class="num">02</div>
+        <div class="text">
+          <strong>Préparation des talents</strong>
+          <span>Ateliers pratiques, simulations d'entretiens, formation sur les attentes réelles du marché du travail.</span>
+        </div>
+      </div>
+      <div class="apropos-card">
+        <div class="num">03</div>
+        <div class="text">
+          <strong>Rencontres directes</strong>
+          <span>Entretiens en continu avec les recruteurs et panel public sur le marché du travail dans le Nord.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DÉROULÉ -->
+<section id="deroule" class="on-dark" aria-labelledby="deroule-h2">
+  <div class="deroule-header">
+    <div class="eyebrow" style="color:var(--orange)">Édition 23–24 janvier 2026</div>
+    <h2 id="deroule-h2">Deux jours qui ont marqué le Nord.</h2>
+  </div>
+
+  <!-- JOUR 1 -->
+  <div class="jour-block fu">
+    <div class="jour-header">
+      <div class="jour-num-box">
+        <span class="big-n">01</span>
+        <span class="jour-word">Jour</span>
+      </div>
+      <div class="jour-meta">
+        <div class="jour-date-pill">23 janvier 2026 · Soirée</div>
+        <h3>Cocktail de lancement</h3>
+      </div>
+    </div>
+    <div class="jour-content">
+      <div class="jour-prog">
+        <ul class="prog-list">
+          <li class="prog-item">
+            <div class="prog-dot"></div>
+            <div class="prog-text">Accueil des invités, partenaires, talents et presse à l'Hôtel Roi Christophe</div>
+          </li>
+          <li class="prog-item hl">
+            <div class="prog-dot"></div>
+            <div class="prog-text">
+              <span class="prog-tag">Discours d'ouverture</span>
+              <strong>Woodmy Jean Baptiste</strong>, PDG de Zero Loss Consulting
+            </div>
+          </li>
+          <li class="prog-item hl">
+            <div class="prog-dot"></div>
+            <div class="prog-text">
+              <span class="prog-tag">Présentation</span>
+              Zero Loss Consulting par <strong>Emmanuel Dubuisson</strong>
+            </div>
+          </li>
+          <li class="prog-item">
+            <div class="prog-dot"></div>
+            <div class="prog-text">Projection du documentaire d'impact de Zero Loss en Haïti</div>
+          </li>
+          <li class="prog-item">
+            <div class="prog-dot"></div>
+            <div class="prog-text">Performance acoustique jazz et réseautage entre invités</div>
+          </li>
+        </ul>
+      </div>
+      <div class="jour-media">
+                <div class="gallery-rows" style="--scroll-duration:60s">
+          <!-- Row 1: scrolls left -->
+          <div class="scroll-row left">
+            <div class="scroll-row-track">
+              <div class="slide"><img src="images/jour1/739a0001.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0007.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0010.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0014.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0015.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9651.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9656.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9669.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9676.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9678.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9690.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9712.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9713.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9720.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9725.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9733.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9735.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9740.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9744.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9747.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9750.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9752.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9758.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9766.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9767.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9770.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9774.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9782.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9783.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9787.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9791.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9801.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9805.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9811.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9816.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9821.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9823.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9833.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9834.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9846.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9848.jpg" alt="Cap Talent Lab jour1"></div>
+              <!-- duplicate for loop -->
+              <div class="slide"><img src="images/jour1/739a0001.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0007.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0010.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0014.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a0015.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9651.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9656.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9669.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9676.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9678.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9690.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9712.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9713.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9720.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9725.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9733.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9735.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9740.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9744.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9747.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9750.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9752.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9758.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9766.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9767.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9770.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9774.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9782.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9783.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9787.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9791.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9801.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9805.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9811.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9816.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9821.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9823.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9833.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9834.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9846.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9848.jpg" alt="Cap Talent Lab jour1"></div>
+            </div>
+          </div>
+          <!-- Row 2: scrolls right -->
+          <div class="scroll-row right">
+            <div class="scroll-row-track">
+              <div class="slide"><img src="images/jour1/739a9851.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9853.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9854.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9856.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9868.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9871.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9872.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9873.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9874.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9881.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9884.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9887.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9889.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9896.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9898.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9900.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9901.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9905.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9906.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9909.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9910.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9912.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9929.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9930.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9933.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9939.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9940.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9944.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9947.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9952.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9956-2.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9959.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9960.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9963.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9971.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9982.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9983.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9984.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9990.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9993.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9996.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9999.jpg" alt="Cap Talent Lab jour1"></div>
+              <!-- duplicate for loop -->
+              <div class="slide"><img src="images/jour1/739a9851.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9853.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9854.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9856.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9868.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9871.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9872.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9873.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9874.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9881.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9884.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9887.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9889.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9896.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9898.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9900.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9901.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9905.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9906.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9909.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9910.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9912.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9929.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9930.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9933.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9939.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9940.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9944.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9947.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9952.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9956-2.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9959.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9960.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9963.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9971.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9982.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9983.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9984.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9990.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9993.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9996.jpg" alt="Cap Talent Lab jour1"></div>
+              <div class="slide"><img src="images/jour1/739a9999.jpg" alt="Cap Talent Lab jour1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video recap J1 -->
+    <div class="video-section">
+      <div class="video-block">
+        <div class="video-header">
+          <div class="video-label">Vidéo récap — Jour 1</div>
+        </div>
+        <div class="video-stage">
+          <video controls preload="none" poster="images/jour1-poster.jpg">
+            <source src="videos/jour1.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JOUR 2 -->
+  <div class="jour-block fu">
+    <div class="jour-header">
+      <div class="jour-num-box">
+        <span class="big-n">02</span>
+        <span class="jour-word">Jour</span>
+      </div>
+      <div class="jour-meta">
+        <div class="jour-date-pill">24 janvier 2026 · Journée complète</div>
+        <h3>Journée opérationnelle</h3>
+      </div>
+    </div>
+    <div class="jour-content">
+      <div class="jour-prog">
+        <ul class="prog-list">
+          <li class="prog-item hl">
+            <div class="prog-dot"></div>
+            <div class="prog-text">
+              <span class="prog-tag">Vision</span>
+              Cap Talent Lab par <strong>Woodmy Jean Baptiste</strong>
+            </div>
+          </li>
+          <li class="prog-item hl">
+            <div class="prog-dot"></div>
+            <div class="prog-text">
+              <span class="prog-tag">Panel</span>
+              <em style="font-style:italic;color:rgba(255,255,255,0.4);display:block;margin-bottom:4px">Le marché du travail dans le Nord — réalités, opportunités et compétences recherchées</em>
+              <strong>Dr. Joaneson Lacour</strong> · <strong>Françoise Zéphir Théophile</strong> (Ets. Novella) · <strong>Katie-Flore Fils-Aimé</strong> (BIEN Group)
+            </div>
+          </li>
+          <li class="prog-item hl">
+            <div class="prog-dot"></div>
+            <div class="prog-text">
+              <span class="prog-tag">Atelier</span>
+              Simulation d'entretien d'embauche par <strong>Annie Gustave</strong>, HR Consultant Zero Loss
+            </div>
+          </li>
+          <li class="prog-item">
+            <div class="prog-dot"></div>
+            <div class="prog-text">Atelier : Être recruté aujourd'hui — compétences, attitude, performance</div>
+          </li>
+          <li class="prog-item">
+            <div class="prog-dot"></div>
+            <div class="prog-text">Entretiens directs et continus entre entreprises et talents</div>
+          </li>
+        </ul>
+      </div>
+      <div class="jour-media">
+                <div class="gallery-rows" style="--scroll-duration:170s">
+          <!-- Row 1: scrolls left -->
+          <div class="scroll-row left">
+            <div class="scroll-row-track">
+              <div class="slide"><img src="images/jour2/739a0003.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0005.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0008.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0012.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0013.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0014.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0016.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0019.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0022.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0027.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0028.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0030.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0032.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0033.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0034.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0038.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0040.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0042.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0045.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0050.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0055.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8472.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8473.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8474.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8475.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8476.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8477.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8478.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8479.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8480.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8482.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8484.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8485.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8489.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8490.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8491.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8493.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8497.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8499.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8501.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9505.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9506.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9509.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9511.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9512.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9513.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9515.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9516.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9518.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9520.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9523.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9527-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9529.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9532.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9534.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9537.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9543.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9545.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9547.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9548.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9550.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9551.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9552.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9556.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9557.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9558.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9560.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9563.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9568.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9569.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9583.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9584.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9585.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9586.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9589.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9590.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9591.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9592.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9594.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9598.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9600.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9602.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9603.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9607.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9618-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9619-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9623.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9626.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9631.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9632.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9634.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9635.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9636-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9637-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9638.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9654.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9655.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9657.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9659.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9662.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9663.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9664.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9665.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9667.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9668.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9669.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9677.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9682.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9683.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9687.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9688.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9690.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9691.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9697.jpg" alt="Cap Talent Lab jour2"></div>
+              <!-- duplicate for loop -->
+              <div class="slide"><img src="images/jour2/739a0003.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0005.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0008.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0012.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0013.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0014.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0016.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0019.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0022.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0027.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0028.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0030.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0032.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0033.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0034.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0038.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0040.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0042.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0045.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0050.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a0055.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8472.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8473.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8474.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8475.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8476.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8477.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8478.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8479.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8480.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8482.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8484.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8485.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8489.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8490.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8491.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8493.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8497.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8499.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a8501.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9505.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9506.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9509.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9511.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9512.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9513.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9515.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9516.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9518.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9520.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9523.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9527-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9529.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9532.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9534.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9537.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9543.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9545.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9547.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9548.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9550.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9551.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9552.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9556.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9557.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9558.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9560.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9563.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9568.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9569.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9583.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9584.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9585.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9586.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9589.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9590.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9591.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9592.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9594.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9598.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9600.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9602.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9603.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9607.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9618-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9619-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9623.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9626.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9631.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9632.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9634.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9635.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9636-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9637-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9638.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9654.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9655.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9657.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9659.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9662.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9663.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9664.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9665.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9667.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9668.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9669.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9677.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9682.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9683.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9687.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9688.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9690.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9691.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9697.jpg" alt="Cap Talent Lab jour2"></div>
+            </div>
+          </div>
+          <!-- Row 2: scrolls right -->
+          <div class="scroll-row right">
+            <div class="scroll-row-track">
+              <div class="slide"><img src="images/jour2/739a9706.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9708.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9722.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9727.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9741.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9749.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9750.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9751.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9756.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9760.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9761.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9769.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9770.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9772.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9773.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9774.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9777.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9780.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9782.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9783.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9784.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9785.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9788.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9791.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9798.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9800.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9802.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9811.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9812.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9813.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9814.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9817.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9822.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9823.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9824.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9825.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9826.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9829.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9830.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9833.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9837.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9841.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9843.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9845.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9848.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9851.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9853.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9854.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9855.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9861.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9863.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9864.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9867.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9868.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9869.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9870.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9872.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9873.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9876.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9877.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9879.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9881.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9884.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9886.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9888.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9890.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9891.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9893.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9894.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9896.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9898.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9905.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9906.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9907.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9908.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9912.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9914.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9915.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9919.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9925.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9926.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9929.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9930.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9938.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9940.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9943.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9954.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9955.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9959.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9976.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9977.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9980.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9981.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9982.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9983.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9984.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9986.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9987-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9990.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9991-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9991.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9993-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9993.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9994.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9995-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9995.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9996-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9997.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/cu4a9982.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/cu4a9983.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/cu4a9992.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00001.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00002.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00005.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00007.jpg" alt="Cap Talent Lab jour2"></div>
+              <!-- duplicate for loop -->
+              <div class="slide"><img src="images/jour2/739a9706.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9708.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9722.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9727.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9741.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9749.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9750.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9751.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9756.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9760.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9761.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9769.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9770.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9772.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9773.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9774.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9777.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9780.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9782.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9783.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9784.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9785.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9788.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9791.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9798.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9800.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9802.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9811.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9812.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9813.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9814.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9817.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9822.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9823.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9824.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9825.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9826.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9829.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9830.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9833.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9837.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9841.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9843.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9845.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9848.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9851.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9853.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9854.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9855.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9861.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9863.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9864.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9867.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9868.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9869.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9870.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9872.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9873.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9876.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9877.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9879.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9881.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9884.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9886.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9888.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9890.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9891.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9893.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9894.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9896.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9898.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9905.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9906.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9907.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9908.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9912.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9914.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9915.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9919.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9925.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9926.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9929.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9930.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9938.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9940.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9943.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9954.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9955.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9959.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9976.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9977.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9980.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9981.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9982.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9983.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9984.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9986.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9987-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9990.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9991-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9991.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9993-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9993.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9994.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9995-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9995.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9996-2.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/739a9997.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/cu4a9982.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/cu4a9983.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/cu4a9992.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00001.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00002.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00005.jpg" alt="Cap Talent Lab jour2"></div>
+              <div class="slide"><img src="images/jour2/dsc00007.jpg" alt="Cap Talent Lab jour2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video recap J2 -->
+    <div class="video-section" style="padding-bottom:80px">
+      <div class="video-block">
+        <div class="video-header">
+          <div class="video-label">Vidéo récap — Jour 2</div>
+        </div>
+        <div class="video-stage">
+          <video controls preload="none" poster="images/jour2-poster.jpg">
+            <source src="videos/jour2.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- IMPACT -->
+<section id="impact" aria-labelledby="impact-h2">
+  <div class="eyebrow">Ce que ça représente</div>
+  <div class="impact-grid">
+    <div class="fu">
+      <h2 id="impact-h2">Une preuve que c'est possible.</h2>
+      <p class="impact-lead">Le Cap Talent Lab a démontré qu'il est possible de structurer la rencontre entre talents et entreprises dans le Grand Nord, de rendre visibles les compétences locales, et de créer un espace utile, concret et reproductible.</p>
+      <div class="impact-pts">
+        <div class="impact-pt"><div class="stripe"></div><p>Structurer la rencontre entre talents et entreprises</p></div>
+        <div class="impact-pt"><div class="stripe"></div><p>Rendre visibles les compétences locales du Nord</p></div>
+        <div class="impact-pt"><div class="stripe"></div><p>Créer un espace utile, concret et reproductible à l'échelle nationale</p></div>
+      </div>
+    </div>
+    <div class="impact-nums fu">
+      <div class="impact-nc">
+        <div class="big">60<em>%+</em></div>
+        <div class="lbl">Des présélectionnés ont accédé à des entretiens</div>
+        <div class="ghost">%</div>
+      </div>
+      <div class="impact-nc">
+        <div class="big">100<em>%</em></div>
+        <div class="lbl">Des présélectionnés ont bénéficié d'une préparation</div>
+        <div class="ghost">%</div>
+      </div>
+      <div class="impact-nc">
+        <div class="big">30<em>–45%</em></div>
+        <div class="lbl">Des candidats ont obtenu une opportunité professionnelle</div>
+        <div class="ghost">+</div>
+      </div>
+      <div class="impact-nc">
+        <div class="big"><em>+</em>10</div>
+        <div class="lbl">Secteurs d'activité représentés parmi les entreprises</div>
+        <div class="ghost">◆</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTENAIRES -->
+<section id="partenaires">
+  <div class="eyebrow">Ils nous ont fait confiance</div>
+  <h2>Partenaires & sponsors</h2>
+  <p class="partenaires-intro">Plus de 20 entreprises partenaires de recrutement ont participé activement aux entretiens lors de la première édition du Cap Talent Lab.</p>
+  <div class="partenaires-grid">
+    <div class="partenaire-item"><img style="height:24px;transform:scale(0.85)" src="logo/asset 1.svg" alt="FedEx"></div>
+    <div class="partenaire-item"><img style="height:20px;transform:scale(0.85)" src="logo/asset 2.svg" alt="HaitiBrand"></div>
+    <div class="partenaire-item"><img style="height:48px" src="logo/asset 3.svg" alt="Dodoz"></div>
+    <div class="partenaire-item"><img style="height:52px;transform:scale(1.8)" src="logo/asset 9.svg" alt="SageCapital"></div>
+    <div class="partenaire-item"><img style="height:46px;transform:scale(1.8)" src="logo/asset 19.svg" alt="BMF"></div>
+    <div class="partenaire-item"><img style="height:46px;transform:scale(1.8)" src="logo/asset 20.svg" alt="Fatima Group"></div>
+    <div class="partenaire-item"><img style="height:42px;transform:scale(1.8)" src="logo/asset 27.svg" alt="MSC Grand Nord"></div>
+    <div class="partenaire-item"><img style="height:46px" src="logo/layer 1.svg" alt="Do It Right"></div>
+    <div class="partenaire-item"><img style="height:34px" src="logo/9luy09.svg" alt="ProPublic"></div>
+    <div class="partenaire-item"><img style="height:44px" src="logo/hnrrtv.svg" alt="V&amp;F"></div>
+    <div class="partenaire-item"><img style="height:46px;transform:scale(1.8)" src="logo/kwy1dy.svg" alt="FHADIRN"></div>
+    <div class="partenaire-item"><img style="height:30px" src="logo/v5spmf.svg" alt="BIEN Nettoyer"></div>
+    <div class="partenaire-item"><img style="height:38px" src="logo/d6eges.svg" alt="HGS"></div>
+    <div class="partenaire-item"><img style="height:28px" src="logo/qg13pa.svg" alt="AVIS"></div>
+    <div class="partenaire-item"><img style="height:38px" src="logo/qy485w.svg" alt="TST"></div>
+    <div class="partenaire-item"><img style="height:38px" src="logo/synrim.svg" alt="TropiClean"></div>
+    <div class="partenaire-item"><img style="height:40px" src="logo/yc4hyx.svg" alt="ZeroLoss Academy"></div>
+    <div class="partenaire-item"><img style="height:36px" src="logo/15cmih.tif.svg" alt="Maison Novella"></div>
+    <div class="partenaire-item"><img style="height:22px;transform:scale(0.85)" src="logo/1lpc1t.tif.svg" alt="Agedetour"></div>
+    <div class="partenaire-item"><img style="height:28px" src="logo/w11hbl.tif.svg" alt="COAMCO Haiti"></div>
+  </div>
+</section>
+
+<!-- PERSPECTIVES -->
+<section id="perspectives" class="on-dark">
+  <div class="eyebrow" style="color:var(--orange)">Prochaines étapes</div>
+  <h2>Un modèle appelé à grandir.</h2>
+  <p class="persp-sub">Cette première édition pose les bases d'un dispositif appelé à évoluer. Zero Loss Consulting prévoit de déployer le Cap Talent Lab dans d'autres villes pour reproduire ce modèle à l'échelle nationale.</p>
+  <div class="persp-grid">
+    <div class="persp-card done fu">
+      <div class="done-badge">Réalisé ✓</div>
+      <div class="persp-city">Cap-Haïtien</div>
+      <div class="persp-region">Grand Nord</div>
+      <div class="persp-status"><strong>Édition 1 — Jan. 2026</strong><br>+200 candidatures · +20 entreprises</div>
+    </div>
+    <div class="persp-card next fu">
+      <div class="next-badge">Prochaine ▸</div>
+      <div class="persp-city">Les Cayes</div>
+      <div class="persp-region">1ère ville nationale</div>
+      <div class="persp-status"><strong>Juillet 2026</strong></div>
+    </div>
+    <div class="persp-card fu">
+      <div class="persp-city">Cap-Haïtien</div>
+      <div class="persp-region">2e édition Nord</div>
+      <div class="persp-status"><strong>Septembre 2026</strong></div>
+    </div>
+    <div class="persp-card fu">
+      <div class="persp-city">Port-au-Prince</div>
+      <div class="persp-region">Capitale — audience nationale</div>
+      <div class="persp-status"><strong>Novembre 2026</strong></div>
+    </div>
+    <div class="persp-card fu">
+      <div class="persp-city">Gonaïves</div>
+      <div class="persp-region">Artibonite</div>
+      <div class="persp-status"><strong>Janvier 2027</strong></div>
+    </div>
+    <div class="persp-card fu">
+      <div class="persp-city">Jacmel</div>
+      <div class="persp-region">Grand Sud-Est</div>
+      <div class="persp-status"><strong>Mars 2027</strong></div>
+    </div>
+    <div class="persp-card fu">
+      <div class="persp-city">Port-de-Paix</div>
+      <div class="persp-region">Grand Nord-Ouest</div>
+      <div class="persp-status"><strong>Mai 2027</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- REJOINDRE -->
+<section id="rejoindre" aria-labelledby="rejoindre-h2">
+  <div class="rejoindre-hd fu">
+    <div class="eyebrow">Rejoignez la prochaine édition</div>
+    <h2 id="rejoindre-h2">Soyez les premiers informés.</h2>
+    <p>Que vous soyez un talent ou une entreprise, laissez vos coordonnées pour être notifié en priorité de la prochaine édition.</p>
+  </div>
+  <div class="rejoindre-grid">
+    <div class="rcard fu">
+      <div class="rcard-icon">🎯</div>
+      <h3>Je suis un talent</h3>
+      <p>Diplômé·e, professionnel·le ou en reconversion — faites partie de la prochaine cohorte présélectionnée.</p>
+      <form onsubmit="ok(event,'ts')" data-form="talent">
+        <div class="fg"><input type="text" placeholder="Prénom et nom" required></div>
+        <div class="fg"><input type="email" placeholder="Adresse email" required></div>
+        <div class="fg"><input type="text" placeholder="Ville de résidence"></div>
+        <div class="fg">
+          <select>
+            <option value="">Domaine de compétence</option>
+            <option>Commerce & Ventes</option>
+            <option>Comptabilité & Finance</option>
+            <option>Ressources humaines</option>
+            <option>Informatique & Tech</option>
+            <option>Administration</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">M'inscrire comme talent</button>
+      </form>
+      <div class="ok-msg" id="ts">✓ Inscription enregistrée ! Nous vous contacterons bientôt.</div>
+    </div>
+    <div class="rcard fu">
+      <div class="rcard-icon">🏢</div>
+      <h3>Je représente une entreprise</h3>
+      <p>Accédez à un vivier de talents présélectionnés et renforcez votre marque employeur dans le Grand Nord.</p>
+      <form onsubmit="ok(event,'es')" data-form="entreprise">
+        <div class="fg"><input type="text" placeholder="Nom de l'entreprise" required></div>
+        <div class="fg"><input type="text" placeholder="Votre nom et prénom" required></div>
+        <div class="fg"><input type="email" placeholder="Email professionnel" required></div>
+        <div class="fg"><input type="tel" placeholder="Numéro de téléphone"></div>
+        <div class="fg">
+          <select>
+            <option value="">Type de participation</option>
+            <option>Recruteur partenaire</option>
+            <option>Sponsor</option>
+            <option>Intervenant / Panéliste</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-outline">Rejoindre comme partenaire</button>
+      </form>
+      <div class="ok-msg" id="es">✓ Demande reçue ! Notre équipe vous contactera sous 48h.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <svg class="footer-svg-logo" id="footer-logo-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.53 203.14">
+  <defs><style>.footer-svg-logo .cls-1,.footer-svg-logo .cls-2,.footer-svg-logo .cls-3,.footer-svg-logo .cls-4{fill:#ffffff}</style></defs>
+  <g id="nav-logo-inner">
+    <g>
+      <g>
+        <g>
+          <polygon class="cls-3" points="84.15 168.19 89.33 168.19 89.44 158.43 84.25 158.53 84.15 168.19"/>
+          <polygon class="cls-3" points="96.14 168.29 102.55 168.26 102.56 158.33 96.08 158.23 96.14 168.29"/>
+          <polygon class="cls-3" points="77.14 158.53 77.14 168.08 79.58 168.19 79.48 158.53 77.14 158.53"/>
+          <path class="cls-3" d="M14.24,161.38h0c-1.96,0-3.56,1.59-3.56,3.56v8.84h7.11v-8.84c0-1.96-1.59-3.56-3.56-3.56Z"/>
+          <polygon class="cls-3" points="110.17 168.49 116.98 168.08 117.08 158.23 110.17 158.43 110.17 168.49"/>
+          <path class="cls-4" d="M36.2,93.66c6.42-1.29,13.14-2.8,18.7-6.4,5.05-3.27,8.94-8.06,11.92-13.24,6.82-11.87,8.61-25.7,12.4-38.66,3.71-12.66,9.55-24.64,17.16-35.37H0v95.38c12.06,1.22,24.3.67,36.2-1.72Z"/>
+          <polygon class="cls-3" points="147.67 158.63 147.87 168.08 150.31 167.98 150.21 158.84 147.67 158.63"/>
+          <path class="cls-3" d="M216.46,159.2h0c-2.05,0-3.7,1.66-3.7,3.7v9.21h7.41v-9.21c0-2.05-1.66-3.7-3.7-3.7Z"/>
+          <path class="cls-1" d="M209.92,0c-9.67,4.58-16.59,14.08-21.12,23.23-3.3,6.66-5.85,13.63-8.82,20.43-2.96,6.78-6.5,13.14-10.91,19.14-4.31,5.86-9.04,11.49-12.29,17.99-3.65,7.3-5.19,15.36-7.43,23.12-1.45,5.01-2.94,9.64-4.41,13.86,7.86,10.78,8.37,21.99,8.4,25.44l1.63-.2.07,1.36-1.29.34v2.03l-1.15.68-.34,21.41,1.29.14.27,5.42,1.76.07.14,1.22,32.59-.34,12.19,11.38v-5.49l-1.22-.68,1.35-1.35c.09-7.68.18-15.36.27-23.03-.08-2.08-.02-7.44,3.46-12.74,2.15-3.28,4.76-5.24,6.44-6.3l.14-1.35-1.15-.2.14-1.83,2.17-2.71-.15-9.74-1.74-1.98,1.19-.28c-.16-2.56,1.72-4.71,3.96-4.93,2.49-.25,4.94,1.94,4.88,4.8l1.27.25-1.93,2.13-.05,9.81,2.24,2.08v2.29l-1.02-.1c-.03.61-.07,1.22-.1,1.83,1.74.94,5.23,3.15,7.93,7.38,1.34,2.11,2.15,4.2,2.64,6.06V0h-21.27Z"/>
+          <polygon class="cls-3" points="125.21 168.29 131.3 168.19 131.71 158.33 125 158.23 125.21 168.29"/>
+          <path class="cls-3" d="M140.59,112.68c2.9-7.33,4.59-14.99,6.82-22.53,2.11-7.16,5.08-13.77,9.39-19.93,4.37-6.25,9.4-12.06,13.18-18.68,7.4-12.96,10.73-27.9,19.42-40.2,2.98-4.22,6.52-8.14,10.61-11.34h-97.58c-2.69,3.56-5.19,7.28-7.45,11.15-6.79,11.59-10.82,23.98-14.01,36.96-3.15,12.83-6.62,25.96-15.41,36.21-8.91,10.39-22.29,13.48-35.3,15.31-10.05,1.42-20.19,1.63-30.25.66v48.68c.49-1.49,1.2-3.08,2.24-4.66,2.47-3.73,5.61-5.69,7.27-6.55l.05-1.17-1.02-.15.05-2.34,1.73-2.18-.05-9.2-2.03-2.59c.46-.07.91-.14,1.37-.2-.17-2.83,2.09-5.13,4.57-5.13,2.6,0,4.92,2.53,4.52,5.49l1.52.3-1.73,1.83.05,9.4,1.98,2.18v2.49l-.91-.03c-.05.45-.09.9-.14,1.35,1.43.64,6.32,3.04,9.08,8.74,2.07,4.29,1.87,8.24,1.68,9.96l-.25,1.02v21.44l3.56,2.44,5.49-6.2h32.52l2.24-1.42,1.02-5.08-.2-7.93-.05-10.77-.76-4.83-2.13-.2-.05-1.58h2.13c.21-4,1.4-16.93,11.53-28.29,7.86-8.81,17.06-12.15,21.19-13.38l-.1-3.25.86-.25.51-12.75-1.04-.13-.33-2.03.56-.13c.1-.37.2-.74.3-1.12.26-.7.85-2.01,2.13-3.2,1.14-1.05,3.19-1.54,3.3-2.26.15-.99.15-4.78.15-4.78l-2.98.02v-2.46l2.83-.05-.05-2.56h1.98l-.03,2.67c.88.03,2.72.05,2.72.05l.06,2.38-2.7.03c-.03,1.24-.05,2.54-.08,5.13.48.34,2.62,1.6,3.12,2.17,1.06,1.19,1.55,2.41,1.78,3.12l.05.97.91.2-.05,2.34-1.17-.1.3,12.65h1.22c-.07.95-.14,1.9-.2,2.85,3.29.85,12.15,3.56,20.06,11.47Z"/>
+          <polygon class="cls-3" points="138.21 167.98 142.28 167.98 142.58 158.63 138.11 158.63 138.21 167.98"/>
+        </g>
+        <rect class="cls-3" y="191.17" width="231.41" height="11.98"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M263.68,44.66c0-13.07,10.04-22.43,23.54-22.43,7.5,0,13.75,2.73,17.84,7.68l-6.44,5.95c-2.91-3.35-6.57-5.08-10.9-5.08-8.12,0-13.88,5.7-13.88,13.88s5.76,13.88,13.88,13.88c4.34,0,7.99-1.73,10.9-5.14l6.44,5.95c-4.09,5.02-10.35,7.74-17.9,7.74-13.44,0-23.48-9.35-23.48-22.43Z"/>
+        <path class="cls-3" d="M339.51,57.05h-20.13l-3.84,9.29h-10.28l19.33-43.36h9.91l19.39,43.36h-10.53l-3.84-9.29ZM336.35,49.43l-6.88-16.6-6.88,16.6h13.75Z"/>
+        <path class="cls-3" d="M396,38.71c0,9.66-7.25,15.67-18.83,15.67h-8.74v11.96h-10.04V22.98h18.77c11.58,0,18.83,6.01,18.83,15.74ZM385.85,38.71c0-4.77-3.1-7.56-9.23-7.56h-8.18v15.05h8.18c6.13,0,9.23-2.79,9.23-7.5Z"/>
+        <path class="cls-2" d="M276.38,87.23h-14.87v-5.39h35.87v5.39h-14.87v37.98h-6.13v-37.98Z"/>
+        <path class="cls-2" d="M329.6,114.36h-23.05l-4.77,10.84h-6.38l19.64-43.36h6.13l19.7,43.36h-6.5l-4.77-10.84ZM327.43,109.4l-9.35-21.25-9.35,21.25h18.71Z"/>
+        <path class="cls-2" d="M347.31,81.84h6.19v37.98h23.48v5.39h-29.67v-43.36Z"/>
+        <path class="cls-2" d="M415.58,119.81v5.39h-31.47v-43.36h30.6v5.39h-24.41v13.32h21.74v5.27h-21.74v14h25.28Z"/>
+        <path class="cls-2" d="M462.91,81.84v43.36h-5.08l-26.02-32.34v32.34h-6.19v-43.36h5.08l26.02,32.34v-32.34h6.2Z"/>
+        <path class="cls-2" d="M484.53,87.23h-14.87v-5.39h35.87v5.39h-14.87v37.98h-6.13v-37.98Z"/>
+        <path class="cls-2" d="M268.33,140.69h4.58v39.4h24.28v3.96h-28.87v-43.36Z"/>
+        <path class="cls-2" d="M332.14,172.47h-24.16l-5.2,11.58h-4.77l19.82-43.36h4.52l19.82,43.36h-4.83l-5.2-11.58ZM330.46,168.76l-10.41-23.29-10.41,23.29h20.82Z"/>
+        <path class="cls-2" d="M385.6,172.47c0,7.37-5.45,11.58-16.29,11.58h-19.95v-43.36h18.71c9.66,0,15.24,4.09,15.24,11.15,0,4.96-2.66,8.24-6.63,9.85,5.58,1.24,8.92,4.89,8.92,10.78ZM353.94,144.47v15.74h13.81c6.94,0,10.97-2.66,10.97-7.87s-4.03-7.87-10.97-7.87h-13.81ZM381.01,172.1c0-5.64-4.15-8.12-11.77-8.12h-15.3v16.29h15.3c7.62,0,11.77-2.48,11.77-8.18Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+      <span class="tag">Salon de l'Emploi · Grand Nord d'Haïti</span>
+      <p>La première plateforme de connexion entre talents et entreprises dans le Grand Nord d'Haïti.</p>
+      <div class="footer-init">
+        <span>Une initiative de</span>
+        <a href="https://zeroloss-ht.com" target="_blank" rel="noopener">Zero Loss Consulting →</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#deroule">Édition 2026</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#partenaires">Partenaires</a></li>
+        <li><a href="#perspectives">Perspectives</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="mailto:captalentlab@zeroloss-ht.com?subject=Dossier de presse">Dossier de presse</a></li>
+        <li><a href="#deroule">Galerie photos</a></li>
+        <li><a href="mailto:captalentlab@zeroloss-ht.com?subject=Contact presse">Contact presse</a></li>
+        <li><a href="https://zeroloss-ht.com" target="_blank">Zero Loss Consulting</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="fci"><strong>Email</strong>captalentlab@zeroloss-ht.com</div>
+      <div class="fci"><strong>Téléphone</strong>+509 3136-9595</div>
+      <div class="fci"><strong>Lieu</strong>Cap-Haïtien, Haïti</div>
+      <div class="fci"><strong>Instagram</strong>@captalentlab</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Cap Talent Lab · Une initiative de <a href="https://zeroloss-ht.com" target="_blank" rel="noopener">Zero Loss Consulting</a></p>
+    <div class="footer-socials">
+      <a href="https://instagram.com/captalentlab" target="_blank" rel="noopener" aria-label="Instagram Cap Talent Lab">Instagram</a>
+      <a href="https://facebook.com/captalentlab" target="_blank" rel="noopener" aria-label="Facebook Cap Talent Lab">Facebook</a>
+      <a href="https://linkedin.com/company/captalentlab" target="_blank" rel="noopener" aria-label="LinkedIn Cap Talent Lab">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Nav scroll + hamburger ──────────────────────────────────────
+  const nav = document.getElementById('navbar');
+  const burger = document.getElementById('navBurger');
+  const navLinks = document.getElementById('navLinks');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', scrollY > 60);
+  });
+
+  burger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+  });
+
+  // Close mobile nav on link click
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ── Scroll reveal ───────────────────────────────────────────────
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fu').forEach(el => obs.observe(el));
+
+  // ── Form submission ─────────────────────────────────────────────
+  function ok(e, id) {
+    e.preventDefault();
+    const form = e.target;
+    // Basic validation
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(f => {
+      f.style.borderColor = '';
+      if (!f.value.trim()) { f.style.borderColor = 'var(--orange)'; valid = false; }
+    });
+    if (!valid) return;
+    // Success state
+    form.style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+    // TODO: replace with real API call, e.g.:
+    // fetch('/api/register', { method:'POST', body: new FormData(form) })
+  }
+
+  /* Mutual exclusion + play overlay toggle */
+  document.querySelectorAll('video').forEach(v => {
+    const stage = v.closest('.video-stage');
+    v.addEventListener('play', () => {
+      stage.classList.add('playing');
+      document.querySelectorAll('video').forEach(o => {
+        if (o !== v) { o.pause(); o.closest('.video-stage').classList.remove('playing'); }
+      });
+    });
+    v.addEventListener('pause', () => stage.classList.remove('playing'));
+    v.addEventListener('ended', () => stage.classList.remove('playing'));
+  });
+
+</script>
+</body>
+</html>
