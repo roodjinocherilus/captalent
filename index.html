@@ -1165,7 +1165,7 @@
         </div>
         <div class="video-stage">
           <button class="video-play" type="button" aria-label="Lire la vidéo Jour 1"></button>
-          <video controls preload="none" poster="images/jour1-poster.jpg">
+          <video controls preload="metadata" poster="images/jour1-poster.jpg">
             <source src="videos/jour1.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture vidéo.
           </video>
@@ -1704,7 +1704,7 @@
         </div>
         <div class="video-stage">
           <button class="video-play" type="button" aria-label="Lire la vidéo Jour 2"></button>
-          <video controls preload="none" poster="images/jour2-poster.jpg">
+          <video controls preload="metadata" poster="images/jour2-poster.jpg">
             <source src="videos/jour2.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture vidéo.
           </video>
@@ -2025,6 +2025,7 @@
     const stage = v.closest('.video-stage');
     const playButton = stage.querySelector('.video-play');
     playButton.addEventListener('click', () => {
+      if (v.readyState === 0) v.load();
       v.play();
     });
     v.addEventListener('play', () => {
@@ -2035,6 +2036,21 @@
     });
     v.addEventListener('pause', () => stage.classList.remove('playing'));
     v.addEventListener('ended', () => stage.classList.remove('playing'));
+  });
+
+  window.addEventListener('load', () => {
+    const warmVideos = () => {
+      document.querySelectorAll('video').forEach(v => {
+        v.preload = 'auto';
+        v.load();
+      });
+    };
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(warmVideos, { timeout: 2500 });
+    } else {
+      setTimeout(warmVideos, 1500);
+    }
   });
 
 </script>
