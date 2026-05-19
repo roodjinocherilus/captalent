@@ -403,11 +403,18 @@
     border-color: transparent transparent transparent #fff;
     pointer-events: none; transition: opacity 0.3s;
   }
+  .video-play {
+    position: absolute; z-index: 4;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 88px; height: 88px; border: 0; padding: 0;
+    background: transparent; color: transparent;
+  }
   .video-stage:hover::before {
     background: rgba(0,0,0,0.7); transform: translate(-50%, -50%) scale(1.08);
   }
   .video-stage.playing::before,
   .video-stage.playing::after { opacity: 0; pointer-events: none; }
+  .video-stage.playing .video-play { display: none; }
   .jour-block + .jour-block .video-section { padding-top: 0; }
 
   /* ─── IMPACT ─── */
@@ -1157,6 +1164,7 @@
           <div class="video-label">Vidéo récap — Jour 1</div>
         </div>
         <div class="video-stage">
+          <button class="video-play" type="button" aria-label="Lire la vidéo Jour 1"></button>
           <video controls preload="none" poster="images/jour1-poster.jpg">
             <source src="videos/jour1.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture vidéo.
@@ -1695,6 +1703,7 @@
           <div class="video-label">Vidéo récap — Jour 2</div>
         </div>
         <div class="video-stage">
+          <button class="video-play" type="button" aria-label="Lire la vidéo Jour 2"></button>
           <video controls preload="none" poster="images/jour2-poster.jpg">
             <source src="videos/jour2.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture vidéo.
@@ -2014,6 +2023,10 @@
   /* Mutual exclusion + play overlay toggle */
   document.querySelectorAll('video').forEach(v => {
     const stage = v.closest('.video-stage');
+    const playButton = stage.querySelector('.video-play');
+    playButton.addEventListener('click', () => {
+      v.play();
+    });
     v.addEventListener('play', () => {
       stage.classList.add('playing');
       document.querySelectorAll('video').forEach(o => {
